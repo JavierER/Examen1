@@ -2,6 +2,8 @@
 
 package com.toy.anagrams.lib;
 
+import javax.swing.JOptionPane;
+
 
 final class StaticWordLibrary extends WordLibrary {
 
@@ -104,6 +106,12 @@ final class StaticWordLibrary extends WordLibrary {
     
     final static WordLibrary DEFAULT = new StaticWordLibrary();
 
+     static public int pedirNumero(){
+   int numero;
+   String res = JOptionPane.showInputDialog("Teclea el Numero :");
+   numero=Integer.parseInt(res);
+   return numero;
+}
     
     private StaticWordLibrary() {
     }
